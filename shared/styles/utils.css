@@ -1,0 +1,70 @@
+:host {
+  font-family: "robotoregular", sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.loading-oneapp {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-oneapp svg {
+  width: 60px;
+  height: 60px;
+  float: none;
+  -webkit-transition: all 0.5s ease-in;
+  -webkit-animation-name: loading;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  transition: all 0.5s ease-in;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ml-card-big {
+  padding: 16px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  overflow: hidden;
+}
+.ml-card-big__padding {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+  .ml-card-big {
+    margin: 10px;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  }
+}
+.ml-card-title {
+  font-family: "robotoregular";
+  font-weight: 500;
+  line-height: 1.24;
+  font-size: 24px;
+  color: #00377d;
+  margin: 0;
+}
+
+.at-button-primary {
+  font-weight: 400;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}/*# sourceMappingURL=utils.css.map */
